@@ -1,0 +1,11 @@
+Input a string (can include spaces)
+test test
+
+Input 2 integers
+123 555
+
+1
+2
+3
+4
+1112
