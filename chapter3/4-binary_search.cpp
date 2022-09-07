@@ -42,10 +42,17 @@ int main() {
     // upper_bound returns a pointer to the first array element whos value is larger than x
     // equal_range returns both above pointers
     // THESE FUNCTIONS ASSUME THAT THE ARRAY IS SORTED
-    // If ther eis no such element, the pointer points to the element after the last array element
+    // If there is no such element, the pointer points to the element after the last array element
     z = 4;
     auto k = lower_bound(arr, arr + n, z)-arr;
     if (k<n && arr[k] == z) {
         cout << k << endl;
     }
+    cout << k << endl;
+
+    auto c = lower_bound(arr, arr + n, z) - arr;
+    auto d = upper_bound(arr, arr+n, z) - arr;
+
+    cout << c << endl;
+    cout << d << endl;
 }
